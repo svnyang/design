@@ -64,12 +64,12 @@
       </main>
   </section>
   <section class="my-or-home container-back">
-    <footer class="text-muted  py-5">
-      <div class="text-center ">
-        <p class="my-md-0 isolate"> China 🇨🇳 &nbsp;<a href="https://www.sunyang.vip">SunYang</a>&nbsp;&nbsp;<span>Updated date 2020-5-30</span></p>
+    <footer class="text-muted  py-5 visitor">
+      <div class="text-center leancloud_visitors" id="/visitor.html">
+        <p class="my-md-0 isolate ">China 🇨🇳 &nbsp;<a href="https://www.sunyang.vip">SunYang</a>&nbsp;&nbsp; <iframe width="100%"   frameborder="no" border="0" marginwidth="0" marginheight="0" src="visitor.html" scrolling="no"></iframe> &nbsp;<span>Updated 2020-5-30</span></p>
       </div>
     </footer>
- </section>
+  </section> 
  <div class="advertising"></div>
 </main>
 <script src="js/jquery.min.js"></script>
@@ -99,9 +99,7 @@
   function addDarkmodeWidget() {
     new Darkmode().showWidget();
   }
-  window.addEventListener('load', addDarkmodeWidget);
   new Darkmode({ label: '🌓' }).showWidget();
-  const darkmode =  new Darkmode();
 </script>
 <script  type="text/javascript">
   document.ondragstart = function() { return false;}

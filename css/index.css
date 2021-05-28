@@ -272,7 +272,6 @@ p{
 /****/
 .darkmode-toggle ,.darkmode-layer--button{
   bottom: 100px !important;
-  font-size: 24px !important;
   right: 28px !important;
 }
 #bmc-wbtn{
@@ -307,4 +306,8 @@ p{
 }
 .leancloud-visitors-count{
   font-style: normal;
+}
+iframe{
+  height: 18px;
+  width: 65px;
 }

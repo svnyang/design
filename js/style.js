@@ -1,5 +1,4 @@
 $(function () {
-
     function get_info() {
         var data;
         $.ajax({
@@ -8,19 +7,17 @@ $(function () {
             dataType: "json",
             async: false,
             success: function (res) {
-                console.log(res)
+                // console.log(res)
                 data = res;
             }
         })
         return data;
     }
-
     var data = get_info();
     for (var dataKey in data['data']) {
         var sub_data = data['data'][dataKey];
         var questionName = sub_data['questionName'];
         var questionParent = sub_data['questionParent'];
-
         if(dataKey == 0){
             var active_class='navigation'
         }else{
@@ -28,7 +25,6 @@ $(function () {
         }
         var MarHtml = '<div class="swiper-slide clearfix"><a class="'+active_class+'" href="javascript:void(0);" data-banner="banner-' + dataKey + '">' + questionName + ' <span class="emoji"> ' + questionParent + '</span></a></div>';
         $('.swiper-wrapper').append(MarHtml);
-        
         var children = data['data'][0]['children'];
         var children_html = '';
         for (var i in children) {
@@ -45,7 +41,7 @@ $(function () {
         var cityCode = $(this).attr("data-banner");
         var bannerInfo = cityCode.split('-');
         var children = data['data'][bannerInfo[1]];
-        console.log(children);
+        // console.log(children);
         $(".swiper-slide a").removeClass("navigation");
         $(this).addClass("navigation");
         var children_html = '';
