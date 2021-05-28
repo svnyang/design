@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>留言</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="description" content="为开发人员和设计师收集免费的设计工具和资源、设计素材、设计工具、设计教程。">
+  <meta name="keywords" content="设计灵感,设计素材,图片资源,设计工具,设计教程,UI设计,交互设计,导航,高清大图,字体素材,ICON素材,配色,设计师,前端,设计网站,设计网站大全">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap -->
+  <link rel="stylesheet" href="css/index.css"> <!-- CSS -->
+</head>
+<body>
+<main>
+  <header>
+    <div class="navbar navbar-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <svg t="1622099934068" class="my-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2616" width="200" height="200"><path d="M714.83 962c-12.535 0-25.07-4.749-34.689-14.247L274.478 547.142c-9.389-9.281-14.681-21.913-14.681-35.124s5.292-25.843 14.681-35.124L680.141 76.258c19.395-19.166 50.662-18.997 69.814 0.434 19.164 19.406 18.973 50.649-0.434 69.814L379.429 512.018l370.092 365.487c19.406 19.165 19.598 50.408 0.434 69.814C740.301 957.106 727.572 962 714.83 962z" p-id="2617"></path></svg>
+          <strong>返回</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+  <section class="my-or-home">
+    <div class="container">
+      <div class="py-6 text-center my-or-title" id="container_header">
+        <img class="d-block mx-auto mb-4 my-logo-img " src="images/logo.svg" alt="" width="72px" height="72px">
+        <h2 class="my-cr-l">Leave a comment</h2>
+        <p class="lead my-3 my-cr-txt">任何想法？推荐出色的工具吗？随时留言发送！</p>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid  my-or-home">
+    <div class="container">
+      <div class="row py-5" id="">
+        <div class="col-xl-10 m-auto">
+            <div id="vcomments"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-or-home container-back">
+    <footer class="text-muted  py-5">
+      <div class="text-center leancloud_visitors" id="/index.html">
+        <p class="my-md-0 isolate"> China 🇨🇳 &nbsp;<a href="https://www.sunyang.vip">SunYang</a>&nbsp;&nbsp;Read<i class="leancloud-visitors-count"></i> <span>Updated date 2020-5-30</span></p>
+      </div>
+    </footer>
+ </section>
+ <div class="advertising"></div>
+</main>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sunyang" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<script>
+  setTimeout(function(){
+    $('.toast').css('opacity','1');
+  },1500);
+  $('.advertising').load('advertising.html');
+
+  new Valine({
+    el: '#vcomments', 
+    app_id: 'BDMNhQVBVrPSk0sPtuoES5pR-gzGzoHsz', // 这里填写上面得到的APP ID
+    app_key: 'dTioucSGHIUy0DkUYcXgqloj', // 这里填写上面得到的APP KEY
+    master: 'd65bb3695502d69d2103c6a9dbf63b54',
+    tagMeta: ["博主","小伙伴","访客"],
+    friends:'d87c947f01bbcf3e2ba83a3d1ea05d17',
+    placeholder: '发表评论', 
+    path: window.location.pathname,
+    avatar:'wavatar', // 头像
+    lang: 'zh-cn',
+    recordIP:true, // 是否记录评论者IP
+    visitor: true, // 文章访问量统计
+    enableQQ: true, // 自动获取QQ昵称和QQ头像
+    serverURLs: "",
+    pageSize:'10', // 评论列表分页，每页条数
+    metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱"},
+});
+</script>
+</body>
+</html>

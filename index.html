@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>设计笔记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="description" content="为开发人员和设计师收集免费的设计工具和资源、设计素材、设计工具、设计教程。">
+  <meta name="keywords" content="设计灵感,设计素材,图片资源,设计工具,设计教程,UI设计,交互设计,导航,高清大图,字体素材,ICON素材,配色,设计师,前端,设计网站,设计网站大全">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap -->
+  <link rel="stylesheet" href="css/index.css"> <!-- CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.css"> <!-- 导航 CSS -->
+  <link rel="stylesheet" href="css/just-tip.css">  <!-- 提示 CSS -->
+  <style>.darkmode--activated .my-box{background-color: #000;border: 1px solid rgb(241 241 241 / 8%);box-shadow: 0 4px 24px rgb(32 43 54 / 6%);transform: translateX(0) translateY(-10) translateZ(0); transition: all .4s ease; }.darkmode--activated .my-or-h6{color: #ffffff;}</style>
+</head>
+<body>
+<main>
+  <section class="my-or-home">
+    <div class="container">
+      <div class="py-6 text-center my-or-title" id="container_header">
+        <img class="d-block mx-auto mb-4 my-logo-img " src="images/logo.svg" alt="" width="72px" height="72px">
+        <h2 class="my-cr-l">Design Notes </h2>
+        <p class="lead my-3 my-cr-txt">为设计师和开发人员收集高质量免费的设计工具和资源</p>
+      </div>
+    </div>
+  </section> 
+  <section class="my-or-navigation">
+    <div class="container-fluid container-shadow ">
+      <div class="swiper-container ">
+        <div class="swiper-wrapper" style="display: flex">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid container-back my-or-home">
+    <div class="container">
+      <div class="row py-5" id="container_box"></div>
+    </div>
+  </section>
+  <section class="my-or-navigation py-5">
+    <div class="container text-center ">
+      <main role="main" class="inner cover py-6">
+        <h4 class="cover-heading my-cr-l mb-4">有什么建议吗？</h4>
+        <p class="h6 mb-4 text-muted my-cr-h">任何想法？推荐出色的工具吗？随时留言发送！</p>
+        <p class="lead">
+          <a href="Leave.html" class="btn my-2 my-pg btn-primary-buttom">留言</a>
+        </p>
+      </main>
+      <main role="main" class="inner cover py-6 border-top">
+        <h4 class="cover-heading my-cr-l mb-4">广告位招商合作</h4>
+        <p class="h6 mb-4 text-muted my-cr-h isolate">👏欢迎入驻</p>
+        <p class="lead">
+          <a href="cooperation.html" class="btn my-2 my-pg btn-primary-buttom">接触</a>
+        </p>
+      </main>
+  </section>
+  <section class="my-or-home container-back">
+    <footer class="text-muted  py-5">
+      <div class="text-center leancloud_visitors" id="/index.html">
+        <p class="my-md-0 isolate"> China 🇨🇳 &nbsp;<a href="https://www.sunyang.vip">SunYang</a>&nbsp;&nbsp;Read<i class="leancloud-visitors-count"></i> <span>Updated date 2020-5-30</span></p>
+      </div>
+    </footer>
+ </section>
+ <div class="advertising"></div>
+</main>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/style.js"></script>   <!-- js -->
+<script src="js/justTools.js"></script> <!-- 提示 js -->
+<script src="js/darkmode-js.min.js"></script>  
+<script src="js/swiper-bundle.min.js"></script> <!-- 导航 js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><!--评论-->
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sunyang" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<script>
+  setTimeout(function(){
+    $('.toast').css('opacity','1');
+  },1500);
+  $('.advertising').load('advertising.html');
+  $(".my-btn").click(function(){$(".toast").hide();});
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    // spaceBetween: 30,
+    observer:true,
+    freeMode: true,
+    freeModeMomentumRatio: 0.5,
+    mousewheelControl : true,
+  })
+  swiper.enableMousewheelControl();
+</script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+  new Darkmode({ label: '🌓' }).showWidget();
+  const darkmode =  new Darkmode();
+</script>
+<script  type="text/javascript">
+  document.ondragstart = function() { return false;}
+    function nocontext(e) {
+       return false;
+    }
+    document.oncontextmenu = nocontext;
+  </script>
+</body>
+</html>
