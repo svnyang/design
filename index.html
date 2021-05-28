@@ -80,11 +80,11 @@
 <script src="js/swiper-bundle.min.js"></script> <!-- 导航 js -->
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sunyang" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 <script>
-  setTimeout(function(){
-    $('.toast').css('opacity','1');
-  },1500);
   $('.advertising').load('advertising.html');
-  $(".my-btn").click(function(){$(".toast").hide();});
+    setTimeout(function () {
+      $(".my-advertising").css('opacity','1');
+    }, 2500);
+  // $(".my-btn").click(function(){$(".toast").hide();});
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
     // spaceBetween: 30,
