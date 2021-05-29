@@ -7,55 +7,43 @@
   <meta name="description" content="为开发人员和设计师收集免费的设计工具和资源、设计素材、设计工具、设计教程。">
   <meta name="keywords" content="设计灵感,设计素材,图片资源,设计工具,设计教程,UI设计,交互设计,导航,高清大图,字体素材,ICON素材,配色,设计师,前端,设计网站,设计网站大全">
   <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap-Leave.css"> <!-- bootstrap -->
   <link rel="stylesheet" href="css/index.css"> <!-- CSS -->
 </head>
 <body>
-<main>
-  <header>
-    <div class="navbar navbar-dark shadow-sm">
-      <div class="container d-flex justify-content-between">
-        <a href="javascript:history.go(-1)" class="navbar-brand d-flex align-items-center">
-          <svg t="1622099934068" class="my-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2616" width="200" height="200"><path d="M714.83 962c-12.535 0-25.07-4.749-34.689-14.247L274.478 547.142c-9.389-9.281-14.681-21.913-14.681-35.124s5.292-25.843 14.681-35.124L680.141 76.258c19.395-19.166 50.662-18.997 69.814 0.434 19.164 19.406 18.973 50.649-0.434 69.814L379.429 512.018l370.092 365.487c19.406 19.165 19.598 50.408 0.434 69.814C740.301 957.106 727.572 962 714.83 962z" p-id="2617"></path></svg>
-          <strong>返回</strong>
-        </a>
-      </div>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-4 col-lg-4 d-md-block bg-light sidebar">
+          <div class="bg-gradient-primary  mr-md-3 pt-3 px-4 pt-md-5 px-md-5 col-md-4  text-white sidebar">
+            <img src="images/pattern-lines.svg" alt="pattern-lines" class="position-absolute opacity-4 start-0">
+            <div class="my-3 py-3 ">
+              <h2 class="display-5 ">Design 设计者</h2>
+              <p class="lead">关注&nbsp;“微信公众号”&nbsp;获取更多信息。</p>
+            </div>
+            <img class="d-block mx-auto mb-5 my-logo-img shadow-sm  my-sm-5" src="images/A.png" alt="" width="100%" height="">
+            <div class="leancloud_visitors my-po-bo" id="/Leave.html">
+              <p class="my-md-0 isolate"> China 🇨🇳 &nbsp;<a href="https://www.sunyang.vip" class="text-underline">SunYang</a>&nbsp;&nbsp;Read&nbsp;<i class="leancloud-visitors-count"></i></p>
+            </div>
+          </div>
+      </nav>
+      <main class="col-md-8 ml-sm-auto col-lg-8 px-md-4 p-0">
+          <div class="pt-3 px-4 pt-md-5 px-md-5  ">
+            <div class="my-5">
+              <h3 class="display-5 navigation ">留言 <a  href="javascript:history.go(-1)" class="h6 mb-4 text-muted my-cr-h text-underline ">返回首页 🎉</a>
+              </h3>
+              
+              <p class="h6  text-muted my-cr-h ">任何想法？推荐出色的工具吗？随时留言发送！</p>
+            </div>
+            <div class="" id="vcomments"></div>
+          </div>
+      </main>
     </div>
-  </header>
-  <section class="my-or-home">
-    <div class="container">
-      <div class="py-6 text-center my-or-title" id="container_header">
-        <img class="d-block mx-auto mb-4 my-logo-img shadow-sm" src="images/Wechat_2.jpg" alt="" width="200px" height="200px">
-        <h3 class="mb-4">公众号</h3>
-        <p class="lead my-3 my-cr-txt">关注&nbsp;<code class="alert-link h5 my-cr-l">“微信公众号”</code>&nbsp;获取更多信息。</p>
-        <p class="lead my-3 my-cr-txt">任何想法？推荐出色的工具吗？随时留言发送！</p>
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid  my-or-home">
-    <div class="container">
-      <div class="row py-5" id="">
-        <div class="col-xl-10 m-auto">
-            <div id="vcomments"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="my-or-home container-back">
-    <footer class="text-muted  py-5">
-      <div class="text-center leancloud_visitors" id="/Leave.html">
-        <p class="my-md-0 isolate"> China 🇨🇳 &nbsp;<a href="https://www.sunyang.vip">SunYang</a>&nbsp;&nbsp;Read&nbsp;<i class="leancloud-visitors-count"></i></p>
-      </div>
-    </footer>
- </section>
- <div class="advertising"></div>
-</main>
+  </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sunyang" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 <script>
-  $('.advertising').load('advertising.html');
   setTimeout(function () {
   $(".my-advertising").css('opacity','1');
   }, 2500);
