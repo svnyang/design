@@ -132,7 +132,7 @@
 			classie.add( self.ntf, 'ns-hide' );
 			// callback
 			self.options.onClose();
-		}, 111300 );
+		}, 1300 );
 
 		// after animation ends remove ntf from the DOM
 		var onEndAnimationFn = function( ev ) {
