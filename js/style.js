@@ -41,7 +41,6 @@ $(function () {
         var cityCode = $(this).attr("data-banner");
         var bannerInfo = cityCode.split('-');
         var children = data['data'][bannerInfo[1]];
-        // console.log(children);
         $(".swiper-slide a").removeClass("navigation");
         $(this).addClass("navigation");
         var children_html = '';
