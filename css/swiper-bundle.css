@@ -182,27 +182,27 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  left: 10px;
+  left: 0;
   right: auto;
 }
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
   content: 'prev';
-  font-size: 18px;
-  color: #596270;
+  font-size: 16px;
+  color: #222736;
   font-weight: 800;
   z-index: 10;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  right: 10px;
+  right: 0;
   left: auto;
 }
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
   content: 'next';
-  font-size: 18px;
-  color: #596270;
+  font-size: 16px;
+  color: #222736;
   font-weight: 800;
   z-index: 10;
 }

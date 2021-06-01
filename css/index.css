@@ -342,6 +342,7 @@ iframe{
   right: 0!important;
   top: 0!important;
   height: 100%;
+  width: 100%;
 }
 .my-po-bo{
   position: absolute;
@@ -353,4 +354,42 @@ iframe{
 }
 .text-underline {
   text-decoration: underline;
+}
+.my-gradient:before {
+  left: 0;
+  background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#fff 90%,#fff);}
+.my-gradient:after {
+  right: 0;
+  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff 90%,#fff);}
+@media (min-width: 992px){
+  .my-gradient:before, .my-gradient:after {
+    width: 100px;
+  }
+}
+.my-gradient:after, .my-gradient:before {
+transition: opacity .2s ease-in-out;
+opacity: 1;
+content: "";
+display: block;
+pointer-events: none;
+position: absolute;
+top: 0;
+bottom: 0;
+z-index: 2;
+}
+.my-gradient-box {
+position: relative; 
+isolation: isolate;
+}
+.darkmode--activated .my-gradient:before{
+  background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#000 90%,#000);
+}
+.darkmode--activated .my-gradient:after {
+  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#000 90%,#000);
+}
+.darkmode--activated .swiper-button-prev:after {
+  color: #dce8ff;
+}
+.darkmode--activated .swiper-button-next:after {
+  color: #dce8ff;
 }

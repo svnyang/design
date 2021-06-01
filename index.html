@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/index.css"> <!-- CSS -->
   <link rel="stylesheet" href="css/swiper-bundle.css"> <!-- 导航 CSS -->
   <link rel="stylesheet" href="css/just-tip.css">  <!-- 提示 CSS -->
+  <link rel="stylesheet" type="text/css" href="css/prompt/ns-default.css" />
+  <link rel="stylesheet" type="text/css" href="css/prompt/ns-style-growl.css" />
   <style>.darkmode--activated .my-box{background-color: #000;border: 1px solid rgb(241 241 241 / 8%);box-shadow: 0 4px 24px rgb(32 43 54 / 6%);transform: translateX(0) translateY(-10) translateZ(0); transition: all .4s ease; }.darkmode--activated .my-or-h6{color: #ffffff;}</style>
   <script>
     var _hmt = _hmt || [];
@@ -33,11 +35,13 @@
       </div>
     </div>
   </section> 
-  <section class="my-or-navigation">
+  <section class="my-or-navigation my-gradient-box my-gradient">
     <div class="container-fluid container-shadow ">
       <div class="swiper-container ">
         <div class="swiper-wrapper" style="display: flex">
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </section>
@@ -56,7 +60,7 @@
         </p>
       </main>
       <main role="main" class="inner cover py-6 border-top">
-        <h4 class="cover-heading my-cr-l mb-4">广告位招商合作</h4>
+        <h4 class="cover-heading my-cr-l mb-4">广告位招租</h4>
         <p class="h6 mb-4 text-muted my-cr-h isolate">👏欢迎入驻</p>
         <p class="lead">
           <a href="cooperation.html" class="btn my-2 my-pg btn-primary-buttom">联系方式</a>
@@ -64,11 +68,11 @@
       </main>
   </section>
   <section class="my-or-home container-back">
-    <footer class="text-muted  py-5 visitor">
+    <!-- <footer class="text-muted  py-5 visitor">
       <div class="text-center leancloud_visitors">
         <p class="my-md-0 isolate ">China 🇨🇳 &nbsp;<a href="https://www.sunyang.vip">SunYang</a>&nbsp;&nbsp; <iframe width="100%"   frameborder="no" border="0" marginwidth="0" marginheight="0" src="visitor.html" scrolling="no"></iframe> &nbsp;<span>Updated 2020-5-30</span></p>
       </div>
-    </footer>
+    </footer> -->
   </section> 
  <div class="advertising"></div>
 </main>
@@ -79,21 +83,25 @@
 <script src="js/darkmode-js.min.js"></script>  
 <script src="js/swiper-bundle.min.js"></script> <!-- 导航 js -->
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sunyang" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<script src="js/prompt/modernizr.custom.js"></script>
+<script src="js/prompt/classie.js"></script>
+<script src="js/prompt/notificationfx.js"></script>
 <script>
-  $('.advertising').load('advertising.html');
+  // $('.advertising').load('advertising.html');
     setTimeout(function () {
       $(".my-advertising").css('opacity','1');
     }, 2500);
-  // $(".my-btn").click(function(){$(".toast").hide();});
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
-    // spaceBetween: 30,
+    mousewheel : true,
     observer:true,
-    freeMode: true,
+    // freeMode: true,
     freeModeMomentumRatio: 0.5,
-    mousewheelControl : true,
-  })
-  swiper.enableMousewheelControl();
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 </script>
 <script>
   function addDarkmodeWidget() {
