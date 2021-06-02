@@ -357,10 +357,33 @@ iframe{
 }
 .my-gradient:before {
   left: 0;
-  background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#fff 90%,#fff);}
+  background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#fff 90%,#fff);
+  -webkit-animation: fade-inn 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-inn 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 .my-gradient:after {
   right: 0;
-  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff 90%,#fff);}
+  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff 90%,#fff);
+  -webkit-animation: fade-inn 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-inn 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes fade-inn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-inn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (min-width: 992px){
   .my-gradient:before, .my-gradient:after {
     width: 100px;
@@ -383,10 +406,31 @@ isolation: isolate;
 }
 .darkmode--activated .my-gradient:before{
   background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#000 90%,#000);
+  -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .darkmode--activated .my-gradient:after {
   background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#000 90%,#000);
+  -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .darkmode--activated .swiper-button-prev:after {
   color: #dce8ff;
 }
