@@ -405,12 +405,12 @@ position: relative;
 isolation: isolate;
 }
 .darkmode--activated .my-gradient:before{
-  background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#000 90%,#000);
+  background: linear-gradient(270deg,hsla(0,0%,0%,0) 0,#000 90%,#000);
   -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .darkmode--activated .my-gradient:after {
-  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#000 90%,#000);
+  background: linear-gradient(90deg,hsla(0,0%,0%,0) 0,#000 90%,#000);
   -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
