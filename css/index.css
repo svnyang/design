@@ -273,11 +273,9 @@ p{
 /****/
 .darkmode-toggle ,.darkmode-layer--button{
   bottom: 100px !important;
-  right: 28px !important;
+  right: 18px !important;
 }
-#bmc-wbtn{
-  right: 20px !important;
-}
+
 /****/
 .navbar-dark .navbar-brand{
   color: #222736;
