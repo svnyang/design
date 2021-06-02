@@ -169,8 +169,8 @@ p{
 .icon {
   position: relative;
   font-size: 0.5rem;
-  color: #ff8818;
-  background-color: #fff2ea;
+  color: #5951fd;
+  background: rgba(0,102,255,.1);
   border-radius: 10%;
   padding: 0.1rem 0.3rem;
   text-align: center;
