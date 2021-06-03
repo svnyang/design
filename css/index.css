@@ -50,6 +50,7 @@ p{
 .my-cr-txt{
   font-weight: 400;
   color: #9da6b7;
+  isolation: isolate;
 }
 .my-cr-l{
   color: #5951fd !important;
@@ -57,6 +58,7 @@ p{
 }
 .my-cr-h{
   color: #9da6b7 !important;
+  isolation: isolate;
 }
 .isolate{
   isolation: isolate;
@@ -434,4 +436,10 @@ isolation: isolate;
 }
 .darkmode--activated .swiper-button-next:after {
   color: #dce8ff;
+}
+
+@media (max-width: 768px){
+  .my-update{
+    display: block;
+  }
 }
