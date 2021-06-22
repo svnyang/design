@@ -184,6 +184,19 @@ p{
   font-weight: 600;
   float: right;
 }
+.icon-svg {
+  position: relative;
+  padding: 0.1rem 0.3rem;
+  text-align: center;
+  font-style: normal;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.80);
+  font-weight: 600;
+  margin-right: 14px;
+}
+.text-center svg {
+  fill: #6c757d;
+}
 .my-flex{
   display: flex;
 }
