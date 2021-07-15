@@ -444,7 +444,6 @@ isolation: isolate;
     opacity: 1;
   }
 }
-
 .darkmode--activated .swiper-button-prev:after {
   color: #dce8ff;
 }
@@ -455,5 +454,25 @@ isolation: isolate;
 @media (max-width: 768px){
   .my-update{
     display: block;
+  }
+}
+.shake {
+  animation: .8s infinite beatshake;
+}
+@keyframes  beatshake {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.1);
+  }
+  40% {
+      transform: scale(1);
+  }
+  60% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
   }
 }
