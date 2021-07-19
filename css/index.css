@@ -476,3 +476,8 @@ isolation: isolate;
       transform: scale(1);
   }
 }
+.sy-div {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+}
