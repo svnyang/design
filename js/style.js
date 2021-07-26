@@ -74,3 +74,50 @@ $(function () {
 })
 
 
+
+new Valine({
+    el: '#vcomments', 
+    app_id: 'BDMNhQVBVrPSk0sPtuoES5pR-gzGzoHsz', // 这里填写上面得到的APP ID
+    app_key: 'dTioucSGHIUy0DkUYcXgqloj', // 这里填写上面得到的APP KEY
+    master: 'd65bb3695502d69d2103c6a9dbf63b54',
+    tagMeta: ["博主","小伙伴","访客"],
+    friends:'d87c947f01bbcf3e2ba83a3d1ea05d17',
+    placeholder: '说点什么...', 
+    path: '/Leave.html',
+    avatar:'wavatar', // 头像
+    lang: 'zh-cn',
+    recordIP:true, // 是否记录评论者IP
+    visitor: true, // 文章访问量统计
+    enableQQ: true, // 自动获取QQ昵称和QQ头像
+    serverURLs: "",
+    pageSize:'10', // 评论列表分页，每页条数
+    metaPlaceholder: {"nick":"昵称","mail":"邮箱"},
+});
+
+function getScrollbarWidth() {
+  var odiv = document.createElement('div'),//创建一个div
+      styles = {
+          width: '100px',
+          height: '100px',
+          overflowY: 'scroll'//让他有滚动条
+      }, i, scrollbarWidth;
+  for (i in styles) odiv.style[i] = styles[i];
+  document.body.appendChild(odiv);//把div添加到body中
+  scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
+  odiv.remove();//移除创建的div
+  return scrollbarWidth;//返回滚动条宽度
+}
+
+  $('#two').click(function(){
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').css("padding-right",getScrollbarWidth()+"px");
+  $('body').addClass('modal-active');
+})
+
+$('.close-overlay').click(function(){
+  $('#modal-container').addClass('out');
+  $('body').removeClass('modal-active');
+  $("body").removeAttr("style"); 
+
+});

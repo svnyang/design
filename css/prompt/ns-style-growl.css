@@ -4,7 +4,7 @@
 .ns-growl {
 	/* top: 30px; */
 	left: 16px;
-	max-width: 300px;
+	max-width: 340px;
 	border-radius: 5px;
 }
 
@@ -230,8 +230,20 @@
 	top: auto;
 	bottom: 16px;
 	box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 10%);
+	pointer-events: auto;
+	background: linear-gradient(299deg,#5951fe,#8a50fe);
 }
-
+.ns-box-inner a ,.ns-box-inner p{
+	color: #ffffff;
+	opacity: 1;
+}
+.ns-box-inner span{
+	background-color: #fff;
+	padding:7px 5px;
+	border-radius: 100%;
+	color: #8a50fe;
+	font-weight: 800;
+}
 .ns-effect-slide .ns-close::before,
 .ns-effect-slide .ns-close::after {
 	background: #333;

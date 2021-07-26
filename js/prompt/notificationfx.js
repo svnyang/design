@@ -132,7 +132,7 @@
 			classie.add( self.ntf, 'ns-hide' );
 			// callback
 			self.options.onClose();
-		}, 1300 );
+		}, 450000 );
 
 		// after animation ends remove ntf from the DOM
 		var onEndAnimationFn = function( ev ) {
@@ -161,8 +161,8 @@
 	setTimeout( function() {
 		// create the notification
 		var notification = new NotificationFx({
-			// message : '<img src="images/A.png">',
-			message : '<p>🌸🌸🌸&nbsp;温馨提示：操作鼠标可左右拖拽导航或上下、左右滑动滚轮控制导航。</p>',
+			// message : '<img src="/images/pattern-lines.svg.png">',
+			message : '<p><span>AD</span>&nbsp;&nbsp;广告位招租，欢迎入驻。<a href="cooperation.html" class="shake" target="_blank">联系方式！<i>🎉</i></a></p>',
 			layout : 'growl',
 			effect : 'slide',
 			type : 'notice', // notice, warning or error

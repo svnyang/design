@@ -25,6 +25,18 @@
     </script>
 </head>
 <body>
+<script src="js/jquery.min.js"></script>
+<script src="js/loading.js"></script>
+  <!-- <div class="psst">
+      <a href="#" class="sy-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none" role="img" class="icon-16 text-white fill-current">
+          <path d="M8.28596 6.51819C7.7978 6.03003 7.00634 6.03003 6.51819 6.51819C6.03003 7.00634 6.03003 7.7978 6.51819 8.28596L11.2322 13L6.51819 17.714C6.03003 18.2022 6.03003 18.9937 6.51819 19.4818C7.00634 19.97 7.7978 19.97 8.28596 19.4818L13 14.7678L17.714 19.4818C18.2022 19.97 18.9937 19.97 19.4818 19.4818C19.97 18.9937 19.97 18.2022 19.4818 17.714L14.7678 13L19.4818 8.28596C19.97 7.7978 19.97 7.00634 19.4818 6.51819C18.9937 6.03003 18.2022 6.03003 17.714 6.51819L13 11.2322L8.28596 6.51819Z" fill="currentColor"></path>
+          </svg>
+      </a>
+      <p>
+        <span>👏 广告位招租 &amp; 虚位以待<a target="_blank" href="cooperation.html">&nbsp;&nbsp;联系方式&nbsp;&nbsp;</a>👏</span>
+      </p>
+  </div> -->
 <main>
   <section class="my-or-home">
     <div class="container">
@@ -52,22 +64,23 @@
     </div>
   </section>
   <section class="my-or-navigation py-5">
-    <div class="container text-center ">
-      <main role="main" class="inner cover py-6">
+    <div class="container text-center py-6"> 
+       <main role="main" class=" cover">
         <h4 class="cover-heading my-cr-l mb-4">有什么建议吗？</h4>
-        <p class="h6 mb-4 text-muted my-cr-h">任何想法？推荐出色的工具吗？随时留言发送！</p>
+        <p class="h6 mb-4 text-muted my-cr-h">任何想法？推荐出色的工具吗？随时留言！</p>
         <p class="lead">
-          <a href="Leave.html" class="btn my-2 my-pg btn-primary-buttom shake">留言</a>
+          <a href="javascript:;" id="two" class="btn my-2 my-pg btn-primary-buttom">留言</a>
         </p>
+        <div class="sy-div">
+          <a href="https://www.producthunt.com/posts/design-notes-3?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-design-notes-3" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=304562&theme=light" alt="Design Notes - 为设计师和开发人员收集高质量免费的设计工具和资源 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+        </div>
       </main>
-      <main role="main" class="inner cover py-6 border-top">
-        <h4 class="cover-heading my-cr-l mb-4">广告位招租</h4>
-        <p class="h6 mb-4 text-muted my-cr-h isolate">👏欢迎入驻</p>
-        <p class="lead">
-          <a href="cooperation.html" class="btn my-2 my-pg btn-primary-buttom">联系方式</a>
-        </p>
-      </main>
+      <!-- <main role="main" class="inner cover  border-top">
+        <div class="" id="vcomments"></div>
+      </main>  -->
+      </div>
   </section>
+
   <section class="my-or-home container-back">
     <footer class="text-muted  py-5 visitor">
       <div class="text-center">
@@ -83,12 +96,26 @@
   </section> 
  <div class="advertising"></div>
 </main>
-<div class="sy-div">
-  <a href="https://www.producthunt.com/posts/design-notes-3?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-design-notes-3" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=304562&theme=dark" alt="Design Notes - 为设计师和开发人员收集高质量免费的设计工具和资源 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+<div id="modal-container">
+  <div class="modal-overlay modal-background">
+    <div class="modal">
+      <div class="shot-container">
+        <div class="container inner">
+          <div class="" id="vcomments"></div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <a href="#" class="close-overlay" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none" role="img" class=" fill-current"><path d="M8.28596 6.51819C7.7978 6.03003 7.00634 6.03003 6.51819 6.51819C6.03003 7.00634 6.03003 7.7978 6.51819 8.28596L11.2322 13L6.51819 17.714C6.03003 18.2022 6.03003 18.9937 6.51819 19.4818C7.00634 19.97 7.7978 19.97 8.28596 19.4818L13 14.7678L17.714 19.4818C18.2022 19.97 18.9937 19.97 19.4818 19.4818C19.97 18.9937 19.97 18.2022 19.4818 17.714L14.7678 13L19.4818 8.28596C19.97 7.7978 19.97 7.00634 19.4818 6.51819C18.9937 6.03003 18.2022 6.03003 17.714 6.51819L13 11.2322L8.28596 6.51819Z" fill="currentColor"></path></svg>
+    </a>
+  </div>
 </div>
-<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/style.js?=20210715"></script>   <!-- js -->
+<script src="js/style.js?=20210726"></script>   <!-- js -->
 <script src="js/justTools.js"></script> <!-- 提示 js -->
 <script src="js/darkmode-js.min.js"></script>  
 <script src="js/swiper-bundle.min.js"></script> <!-- 导航 js -->
@@ -111,19 +138,15 @@
       prevEl: '.swiper-button-prev',
     },
   });
-</script>
-<script>
   function addDarkmodeWidget() {
     new Darkmode().showWidget();
   }
   new Darkmode({ label: '🌓' }).showWidget();
-</script>
-<script  type="text/javascript">
   document.ondragstart = function() { return false;}
     function nocontext(e) {
        return false;
     }
     document.oncontextmenu = nocontext;
-  </script>
+</script>
 </body>
 </html>
