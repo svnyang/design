@@ -16,6 +16,7 @@ $(function () {
     var data = get_info();
     for (var dataKey in data['data']) {
         var sub_data = data['data'][dataKey];
+        console.log(sub_data)
         var questionName = sub_data['questionName'];
         var questionParent = sub_data['questionParent'];
         if(dataKey == 0){
@@ -26,6 +27,7 @@ $(function () {
         var MarHtml = '<div class="swiper-slide clearfix"><a class="'+active_class+'" href="javascript:void(0);" data-banner="banner-' + dataKey + '">' + questionName + ' <span class="emoji"> ' + questionParent + '</span></a></div>';
         $('.swiper-wrapper').append(MarHtml);
         var children = data['data'][0]['children'];
+        console.log(children)
         var children_html = '';
         for (var i in children) {
             var icon = children[i]['icon'];
@@ -39,8 +41,10 @@ $(function () {
     };
     $('.swiper-slide a').on("click", function () {
         var cityCode = $(this).attr("data-banner");
+        console.log(cityCode)
         var bannerInfo = cityCode.split('-');
         var children = data['data'][bannerInfo[1]];
+        console.log(children)
         $(".swiper-slide a").removeClass("navigation");
         $(this).addClass("navigation");
         var children_html = '';
