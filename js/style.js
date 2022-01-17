@@ -2,7 +2,7 @@ $(function () {
     function get_info() {
         var data;
         $.ajax({
-            url: 'js/202151.json',
+            url: 'js/220117.json',
             type: 'GET',
             dataType: "json",
             async: false,
