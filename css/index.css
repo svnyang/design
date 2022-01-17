@@ -6,7 +6,14 @@ body {
 }
 .emoji{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-}
+    width: 14px;
+    vertical-align:text-top;
+    margin-left: 4px;
+  }
+  .emojiGif{
+    width: 70px;
+  }
+  
 .container-back{
   /* background-color: #f6f8fa; */
   background-color: #f7f8fc;
@@ -56,6 +63,7 @@ p{
 .my-cr-l{
   color: #5951fd !important;
   isolation: isolate;
+  font-weight: 900;
 }
 .my-cr-h{
   color: #9da6b7 !important;
@@ -96,6 +104,15 @@ p{
   white-space:nowrap;
   box-sizing:inherit;
 }
+.swiper-slide a{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .navigation{
   font-weight:bold;
   color: #222736 !important;
@@ -115,7 +132,7 @@ p{
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1.8rem 1.6rem;
+  padding: 1.6rem;
 }
 .rounded {
   border-radius: 0.4rem !important;
@@ -618,9 +635,9 @@ isolation: isolate;
 .ns-box-inner a{
   text-decoration:underline;
 }
-.ns-box-inner i{
-  font-style:normal;
-  font-size: 18px;
+.ns-box-inner .shake img{
+  width: 22px ;
+  vertical-align: bottom;
 }
 #modal-container {
   position: fixed;

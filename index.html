@@ -8,7 +8,7 @@
   <meta name="keywords" content="设计灵感,设计素材,图片资源,设计工具,设计教程,UI设计,交互设计,导航,高清大图,字体素材,ICON素材,配色,设计师,前端,设计网站,设计网站大全">
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap -->
-  <link rel="stylesheet" href="css/index.css"> <!-- CSS -->
+  <link rel="stylesheet" href="css/index.css?=220117"> <!-- CSS -->
   <link rel="stylesheet" href="css/swiper-bundle.css"> <!-- 导航 CSS -->
   <link rel="stylesheet" href="css/just-tip.css">  <!-- 提示 CSS -->
   <link rel="stylesheet" type="text/css" href="css/prompt/ns-default.css" />
@@ -42,16 +42,16 @@
     <div class="container">
       <div class="py-6 text-center my-or-title" id="container_header">
         <!-- <img class="d-block mx-auto mb-4 my-logo-img " src="images/logo-72@2x.svg" alt="" width="110px" height="110px"> -->
-        <img class="d-block mx-auto mb-4 my-logo-img " src="images/logo.svg" alt="" width="72px" height="72px">
+        <img class="d-block mx-auto mb-4 my-logo-img " src="images/logo.svg" alt="" width="68px" height="68px">
         <!-- <h2 class="my-cr-l" style="color: #f73d24 !important">庆祝中华人民共和国成立72周年</h2> -->
-        <h2 class="my-cr-l">Design Notes </h2>
-        <p class="lead my-3 my-cr-txt">为设计师和开发人员收集高质量免费的设计工具和资源</p>
+        <h3 class="my-cr-l">Design Notes </h3>
+        <p class="lead my-3 my-cr-txt">为设计师和开发人员收集高质量免费的Design Tools和资源</p>
         
       </div>
     </div>
   </section> 
   <section class="my-or-navigation my-gradient-box my-gradient">
-    <div class="container-fluid container-shadow ">
+    <div class="container-fluid">
       <div class="swiper-container ">
         <div class="swiper-wrapper" style="display: flex">
         </div>
@@ -115,16 +115,17 @@
     </a>
   </div>
 </div>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/style.js?=220112"></script>   <!-- js -->
+<script src="js/style.js?=220117"></script>   <!-- js -->
 <script src="js/justTools.js"></script> <!-- 提示 js -->
 <script src="js/darkmode-js.min.js"></script>  
 <script src="js/swiper-bundle.min.js"></script> <!-- 导航 js -->
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sunyang" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 <script src="js/prompt/modernizr.custom.js"></script>
 <script src="js/prompt/classie.js"></script>
-<script src="js/prompt/notificationfx.js"></script>
+<script src="js/prompt/notificationfx.js?=220117"></script>
 <script>
   // $(".shake").click(function () {
   //   _hmt.push(['_trackEvent', 'AD', '首页', '联系方式']);
@@ -146,7 +147,7 @@
   function addDarkmodeWidget() {
     new Darkmode().showWidget();
   }
-  new Darkmode({ label: '🌓' }).showWidget();
+  new Darkmode({ label: '<img width="28px" src="images/icon/1F313.gif">' }).showWidget();
   document.ondragstart = function() { return false;}
     function nocontext(e) {
        return false;
