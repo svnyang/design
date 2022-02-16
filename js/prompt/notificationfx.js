@@ -161,8 +161,8 @@
 	setTimeout( function() {
 		// create the notification
 		var notification = new NotificationFx({
-			// message : '<img src="/images/pattern-lines.svg.png">',
-			message : '<p><span>AD</span>&nbsp;&nbsp;广告位招租，欢迎入驻。<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg5MTE3ODY5MQ==&scene=124#wechat_redirect" class="shake" target="_blank">联系方式！<img src="images/icon/1F389.gif"></a></p>',
+			message : '<img src="/images/weixin.png">',
+			// message : '<p><span>AD</span>&nbsp;&nbsp;广告位招租，欢迎入驻。<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg5MTE3ODY5MQ==&scene=124#wechat_redirect" class="shake" target="_blank">联系方式！<img src="images/icon/1F389.gif"></a></p>',
 			layout : 'growl',
 			effect : 'slide',
 			type : 'notice', // notice, warning or error

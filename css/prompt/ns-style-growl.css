@@ -4,7 +4,7 @@
 .ns-growl {
 	/* top: 30px; */
 	left: 16px;
-	max-width: 340px;
+	max-width: 310px;
 	border-radius: 5px;
 }
 
@@ -231,7 +231,7 @@
 	bottom: 16px;
 	box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 10%);
 	pointer-events: auto;
-	background: linear-gradient(299deg,#5951fe,#8a50fe);
+	/* background: linear-gradient(299deg,#5951fe,#8a50fe); */
 	/* background: linear-gradient(299deg,#bf0103,#e23205); */
 }
 .ns-box-inner a ,.ns-box-inner p{
