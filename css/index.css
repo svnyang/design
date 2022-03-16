@@ -736,3 +736,7 @@ isolation: isolate;
     opacity: 0;
   }
 }
+.leancloud_visitors{
+  font-size: 14px;
+  font-family: MeiYe,PingFangSC-Regular,Microsoft Yahei,sans-serif;
+}
