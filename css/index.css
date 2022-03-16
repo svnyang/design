@@ -208,7 +208,7 @@ p{
   font-style: normal;
   -webkit-transform-origin-x: 0;
   -webkit-transform: scale(0.80);
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-right: 14px;
 }
 .text-center svg {
@@ -338,10 +338,6 @@ p{
 }
 .leancloud-visitors-count{
   font-style: normal;
-}
-iframe{
-  height: 18px;
-  width: 80px;
 }
 .back-f{
   background-color: #FFFFFF;
