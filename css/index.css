@@ -815,6 +815,7 @@ isolation: isolate;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 10000;
+  display: none;
 }
 .bounced-main .bounced-content{
   position: relative;
